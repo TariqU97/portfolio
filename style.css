@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -61,7 +61,6 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 
-
 }
 .header-text h1 span{
     color: rgb(255, 0, 0);
@@ -70,12 +69,13 @@ nav ul li a:hover::after{
    
     #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #000000;
 }
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 .about-col-1{
     flex-basis: 35%;
@@ -86,44 +86,51 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
-    }
-    .sub-title{
-        font-size: 60px;
-        font-weight: 600;
-        color: white;
-    }
-    .tab-titles{
-        display: flex;
-        margin: 20px 0 40px;
-    }
-    .tab-links{
-        margin-right: 50px;
-        font-size: 18px;
-        font-weight: 500;
-        cursor: pointer;
-        position: relative;
-    }
-    .tab-links::after{
-        content: '';
-        width: 0;
-        height: 3px;
-        background: #ff004f;
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        transition: 0.5s;
-    }
-    .tab-links.activelink::after{
-        width: 50px;
-    }
-    .tab-content ul li{
-        list-style: none;
-        margin: 10px 0;
-    }
-    .tab-content ul li span{
-        color:#ff004f;
-        font-size: 14px;
+    color: rgb(0, 179, 255);
+    padding-top: 7%;
     
-        
-    }
-    
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span{
+    font-size: 14px;
+}
+/*Cntact*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 20px;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ff0000;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
